@@ -8,7 +8,7 @@ La app ofrece una interfaz moderna con **Bootstrap** y está pensada como práct
 
 ## 🚀 Funcionalidades 🚀
 - 🎥 **Listado de películas**: Muestra un catálogo dinámico de películas en tarjetas.  
-- 🌐 **Peticiones HTTP**: Obtiene datos de películas desde una API simulada o real.  
+- 🌐 **Peticiones HTTP**: Obtiene datos de películas desde una API real.  
 - 🖼️ **Interfaz moderna**: Diseño responsivo con **Bootstrap**.  
 
 ## 🤖 Tecnologías utilizadas 🤖
