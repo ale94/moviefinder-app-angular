@@ -22,7 +22,7 @@ La app ofrece una interfaz moderna con **Bootstrap** y está pensada como práct
 ## 📦 Instalación 📦
 1. Clonar el repositorio:
    `bash
-   git clone https://github.com/ale94/todolist-app-angular.git`
+   git clone https://github.com/ale94/moviefinder-app-angular.git`
 2. Instalar dependencias:
   `npm install`
 3. Ejecutar el proyecto:
