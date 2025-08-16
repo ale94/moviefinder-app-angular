@@ -1,0 +1,23 @@
+<navbar/>
+<!-- Descripción -->
+<div class="bg-dark text-center py-3 border-bottom border-secondary">
+  <p class="mb-0 fs-5 text-white">
+    Buscar películas de todos los géneros y tendencias.
+  </p>
+</div>
+
+<search-bar (moviesEvent)="onSearch($event)"/>
+<!-- Resultados -->
+<div class="container mt-5">
+  <div class="row g-4" id="movie-list">
+    @for (movie of movies(); track $index) {
+      <div class="col-sm-6 col-lg-4">
+        <movie-card [movie]="movie" />
+      </div>
+    }
+  </div>
+</div>
+
+
+<!-- Footer -->
+<app-footer />
