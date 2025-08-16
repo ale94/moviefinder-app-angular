@@ -1,7 +1,26 @@
-<nav class="navbar navbar-dark bg-transparent py-3">
+<!-- Navbar -->
+<nav class="navbar navbar-dark py-3 shadow-sm">
   <div class="container">
-    <a class="navbar-brand fw-bold fs-4" href="#">
+    <a
+      class="navbar-brand fw-bold fs-3 d-flex align-items-center gap-2"
+      href="#"
+    >
       <i class="bi bi-film"></i> Movie Finder
     </a>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link text-light"
+        [routerLink]="['/movies']"
+        >Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light"
+        [routerLink]="['/search']"
+        >Buscar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Acerca de</a>
+      </li>
+    </ul>
   </div>
 </nav>
