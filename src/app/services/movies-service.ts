@@ -4,6 +4,7 @@ import { Movie } from '../interfaces/movie.interface';
 import { MovieResponse } from '../interfaces/movies.interfaces';
 import { environment } from '../../environments/environment.development';
 import { MovieMapper } from '../mapper/movie.mapper';
+import { map, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -30,5 +31,19 @@ export class MoviesService {
         const movies = MovieMapper.mapMovieResponseToMovieArray(resp.Search);
         this.movies.set(movies);
       });
+  }
+
+  searchMovies(query: string): Observable<Movie[]> {
+    return this.htpp
+      .get<MovieResponse>(`${environment.omdbUrl}`, {
+        params: {
+          apikey: environment.omdbApiKey,
+          s: query,
+        },
+      })
+      .pipe(
+        map(({ Search }) => Search),
+        map((items) => MovieMapper.mapMovieResponseToMovieArray(items)),
+      );
   }
 }
