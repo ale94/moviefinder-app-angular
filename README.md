@@ -17,9 +17,15 @@ La app ofrece una interfaz moderna con **Bootstrap** y está pensada como práct
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
 ## 📷 Capturas 📷
-_(Agrega aquí capturas de tu aplicación cuando la tengas funcionando, por ejemplo del listado y de los favoritos.)_
+<a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/gkH0PM78/github.png' border='0' alt='github'/></a>
 
 ## 📦 Instalación 📦
-1. Clonar el repositorio:  
-   ```bash
-   git clone https://github.com/ale94/movie-catalog-angular.git
+1. Clonar el repositorio:
+   `bash
+   git clone https://github.com/ale94/todolist-app-angular.git`
+2. Instalar dependencias:
+  `npm install`
+3. Ejecutar el proyecto:
+  `ng serve`
+4. Abrir en el navegador:
+  `http://localhost:4200/`
