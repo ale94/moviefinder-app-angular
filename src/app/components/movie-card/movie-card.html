@@ -1,14 +1,16 @@
 <div class="card bg-dark text-light movie-card h-100">
-  <img
-    src="https://hips.hearstapps.com/hmg-prod/images/nosotros-poster-1549472640.jpg"
-    class="card-img-top"
-    alt="Poster película"
-  />
+  <img [src]="movie().poster" class="card-img-top" alt="Poster película" />
   <div class="card-body">
-    <h5 class="card-title">Interstellar</h5>
-    <p class="card-text mb-1"><i class="bi bi-calendar"></i> Año: 2014</p>
+    <h5 class="card-title">{{ movie().title }}</h5>
+    <p class="card-text mb-1">
+      <i class="bi bi-calendar"></i> {{ movie().year }}
+    </p>
     <p class="card-text mb-3">
-      <i class="bi bi-collection-play"></i> Tipo: Película
+      @if (movie().type == "movie") {
+        <i class="bi bi-collection-play"></i> Tipo: Pelicula
+      } @else {
+        <i class="bi bi-collection-play"></i> Tipo: Serie
+      }
     </p>
     <button class="btn btn-outline-light w-100">
       <i class="bi bi-info-circle"></i> Ver detalles

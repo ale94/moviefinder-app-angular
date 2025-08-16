@@ -7,8 +7,6 @@ import { MovieList } from '../../components/movie-list/movie-list';
 @Component({
   selector: 'movie-page',
   imports: [Navbar, SearchBar, MovieList, Footer],
-  templateUrl: './movie-page.html'
+  templateUrl: './movie-page.html',
 })
-export class MoviePage {
-
-}
+export class MoviePage {}
